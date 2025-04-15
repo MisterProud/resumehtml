@@ -1,0 +1,478 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jason Proud - Resume</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        body {
+            padding-top: 56px;
+        }
+        .section {
+            padding: 60px 0;
+        }
+        .profile-img {
+            width: 150px;
+            height: 150px;
+            object-fit: cover;
+        }
+        .skill-badge {
+            margin: 5px;
+            font-size: 0.9rem;
+        }
+        .timeline {
+            position: relative;
+            padding-left: 50px;
+        }
+        .timeline:before {
+            content: '';
+            position: absolute;
+            left: 20px;
+            top: 0;
+            bottom: 0;
+            width: 2px;
+            background: #dee2e6;
+        }
+        .timeline-item {
+            position: relative;
+            margin-bottom: 30px;
+        }
+        .timeline-item:before {
+            content: '';
+            position: absolute;
+            left: -40px;
+            top: 5px;
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+            background: #0d6efd;
+            border: 3px solid white;
+        }
+        .portfolio-item {
+            margin-bottom: 30px;
+            transition: transform 0.3s;
+        }
+        .portfolio-item:hover {
+            transform: translateY(-5px);
+        }
+        .social-icon {
+            font-size: 1.5rem;
+            margin: 0 10px;
+            color: #0d6efd;
+        }
+        .navbar {
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        .carousel-item img {
+            height: 400px;
+            object-fit: cover;
+        }
+    </style>
+</head>
+<body data-bs-spy="scroll" data-bs-target="#navbar-example">
+    <!-- Navigation -->
+    <nav id="navbar-example" class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">Jason Proud</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#profile">Profile</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#education">Education</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#experience">Experience</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#skills">Skills</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#portfolio">Portfolio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#activities">Activities</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="bg-light section" id="profile">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-3 text-center">
+                    <!-- PROFILE IMAGE UPLOAD - Replace the src with your image path -->
+                    <img src="/Users/proudmarkets/Documents/Resume Bootstrap/Images/127736433_4kwecdn08y.JPG" alt="Jason Proud" class="profile-img rounded-circle mb-3">
+                </div>
+                <div class="col-md-9">
+                    <h1>Jason Proud</h1>
+                    <p class="lead">IT Professional | Cloud Solutions | Database Administration | Cybersecurity</p>
+                    <p class="text-muted"><i class="fas fa-map-marker-alt"></i> Brooklyn, United States | <i class="fas fa-phone"></i> 718-223-7893 | <i class="fas fa-envelope"></i> proudmarkets@protonmail.com</p>
+                    <div class="d-flex">
+                        <a href="https://www.linkedin.com/in/jason-proud-59a634230/" class="social-icon"><i class="fab fa-linkedin"></i></a>
+                        <a href="https://github.com/MisterProud" class="social-icon"><i class="fab fa-github"></i></a>
+                        <a href="https://www.instagram.com/bc_sigmas/" class="social-icon"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="row mt-4">
+                <div class="col-12">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">Profile</h5>
+                            <p class="card-text">IT intern seeking to gain hands-on experience in Cloud Solutions & Framework, Database administration, Cybersecurity management. Member of Divine 9 Greek Fraternity, Phi Beta Sigma Fraternity.</p>
+                            <a href="https://www.instagram.com/bc_sigmas/" class="btn btn-outline-primary btn-sm">Phi Beta Sigma Beta Lambda Chapter</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Education Section -->
+    <section class="section" id="education">
+        <div class="container">
+            <h2 class="text-center mb-5">Education</h2>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <h4>Bachelor of Science in Information Systems</h4>
+                    <h5>Brooklyn College</h5>
+                    <p class="text-muted">Jan 2022 — May 2025 | Brooklyn, NY</p>
+                    <p>Minor: Computer Science | GPA: 3.0</p>
+                </div>
+                <div class="timeline-item">
+                    <h4>Associates of Science in Business Administration</h4>
+                    <h5>LaGuardia Community College</h5>
+                    <p class="text-muted">Oct 2014 — Dec 2016 | Long Island City, NY</p>
+                    <p>GPA: 3.2</p>
+                </div>
+                <div class="timeline-item">
+                    <h4>Certified Cloud Practitioner</h4>
+                    <h5>Amazon Web Services</h5>
+                    <p class="text-muted">Feb 2022 — Feb 2025</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section class="bg-light section" id="experience">
+        <div class="container">
+            <h2 class="text-center mb-5">Professional Experience</h2>
+            
+            <div class="accordion" id="experienceAccordion">
+                <!-- Current Job -->
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingOne">
+                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne">
+                            <strong>Logistics & Operations Contractor</strong> - Shipt | Oct 2022 — Present
+                        </button>
+                    </h2>
+                    <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#experienceAccordion">
+                        <div class="accordion-body">
+                            <ul>
+                                <li>Oversee daily operations, including receiving, storage, and shipping.</li>
+                                <li>Developed and implemented standard operating procedures to improve efficiency and productivity.</li>
+                                <li>Coordinated with providers to ensure timely and cost-effective delivery of goods.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Internships -->
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingTwo">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo">
+                            <strong>MS SharePoint Engineer</strong> - NYC Office of Technology and Innovation | Aug 2024 — Jan 2025
+                        </button>
+                    </h2>
+                    <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#experienceAccordion">
+                        <div class="accordion-body">
+                            <ul>
+                                <li>Create custom SharePoint solutions, including web parts, master pages, content types, and workflows.</li>
+                                <li>Implement, configure, and customize SharePoint sites and applications.</li>
+                                <li>Provide technical support, troubleshoot issues, and monitor performance.</li>
+                                <li>Work with different city agencies to gather requirements, design solutions, and ensure alignment with business needs.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingThree">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree">
+                            <strong>Micro Computer Specialist</strong> - NYC Office of Technology and Innovation | Jan 2024 — July 2024
+                        </button>
+                    </h2>
+                    <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#experienceAccordion">
+                        <div class="accordion-body">
+                            <ul>
+                                <li>Analyze assets, financial, and contractual data obtained from vendors, and consolidate with the asset data received from OTI technical teams.</li>
+                                <li>Research hardware & software model information to maintain the accuracy of configuration items.</li>
+                                <li>Perform audit of IT equipment on-site by scanning serial numbers, asset tags, etc. into Excel templates.</li>
+                                <li>Assists team with troubleshooting asset management tickets.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingFour">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour">
+                            <strong>Mobile Device Management Engineer</strong> - NYC Office of Technology and Innovation | Apr 2023 — Sep 2023
+                        </button>
+                    </h2>
+                    <div id="collapseFour" class="accordion-collapse collapse" data-bs-parent="#experienceAccordion">
+                        <div class="accordion-body">
+                            <ul>
+                                <li>Planned, tested, and managed mobile software upgrades, patches, and maintenance to enhance the performance and security of the mobile device environment.</li>
+                                <li>Provision, deploy, configure, monitor, and support 200 mobile and end-point devices using WorkSpace One.</li>
+                                <li>Integrate, maintain, monitor, document(ServiceNow), and develop mobile device processes and procedures guided by industry best practices.</li>
+                                <li>Enrolled Window devices into Azure using hash values.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingFive">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive">
+                            <strong>Administrative Assistant</strong> - WeWork, NYC Ladders For Leaders | 2016 — 2017
+                        </button>
+                    </h2>
+                    <div id="collapseFive" class="accordion-collapse collapse" data-bs-parent="#experienceAccordion">
+                        <div class="accordion-body">
+                            <ul>
+                                <li>Assisted in social media campaigns such as advertisements and media creation.</li>
+                                <li>Worked with the IT team to manage IT infrastructure, including hardware, software, and networking.</li>
+                                <li>Conducted research on emerging technologies and presented findings to the IT team.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section class="section" id="skills">
+        <div class="container">
+            <h2 class="text-center mb-5">Technical Skills</h2>
+            <div class="row">
+                <div class="col-md-4">
+                    <h4>Programming</h4>
+                    <span class="badge bg-primary skill-badge">Java</span>
+                    <span class="badge bg-primary skill-badge">Python</span>
+                    <span class="badge bg-primary skill-badge">SQL</span>
+                </div>
+                <div class="col-md-4">
+                    <h4>Cloud & Systems</h4>
+                    <span class="badge bg-success skill-badge">Amazon AWS</span>
+                    <span class="badge bg-success skill-badge">Linux</span>
+                    <span class="badge bg-success skill-badge">Azure</span>
+                    <span class="badge bg-success skill-badge">SharePoint</span>
+                </div>
+                <div class="col-md-4">
+                    <h4>Tools</h4>
+                    <span class="badge bg-info skill-badge">Microsoft Office</span>
+                    <span class="badge bg-info skill-badge">ServiceNow</span>
+                    <span class="badge bg-info skill-badge">WorkSpace One</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section class="bg-light section" id="portfolio">
+        <div class="container">
+            <h2 class="text-center mb-5">Portfolio</h2>
+            
+            <!-- Projects Carousel -->
+            <div id="portfolioCarousel" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#portfolioCarousel" data-bs-slide-to="0" class="active"></button>
+                    <button type="button" data-bs-target="#portfolioCarousel" data-bs-slide-to="1"></button>
+                    <button type="button" data-bs-target="#portfolioCarousel" data-bs-slide-to="2"></button>
+                </div>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" class="d-block w-100" alt="Cloud Migration">
+                        <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-75">
+                            <h5>SharePoint Solutions</h5>
+                            <p>Custom web parts and workflows for enterprise collaboration</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" class="d-block w-100" alt="Data Visualization">
+                        <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-75">
+                            <h5>IT Asset Management</h5>
+                            <p>System for tracking and auditing technology assets</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="https://images.unsplash.com/photo-1517430816045-df4b7de11d1d?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" class="d-block w-100" alt="Mobile Device Management">
+                        <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-75">
+                            <h5>Mobile Device Management</h5>
+                            <p>Enterprise solution for 200+ endpoints</p>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#portfolioCarousel" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon"></span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#portfolioCarousel" data-bs-slide="next">
+                    <span class="carousel-control-next-icon"></span>
+                </button>
+            </div>
+            
+            <!-- Additional Projects -->
+            <div class="row mt-5">
+                <div class="col-md-4 portfolio-item">
+                    <div class="card h-100">
+                        <img src="https://images.unsplash.com/photo-1624953587687-daf255b6b80a?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=80" class="card-img-top" alt="Azure Cloud Services">
+                        <div class="card-body">
+                            <h5 class="card-title">SharePoint Solutions</h5>
+                            <p class="card-text">Custom workflows and web parts for enterprise collaboration.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 portfolio-item">
+                    <div class="card h-100">
+                        <img src="https://images.unsplash.com/photo-1563986768609-322da13575f3?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=80" class="card-img-top" alt="Security Audit">
+                        <div class="card-body">
+                            <h5 class="card-title">Device Security</h5>
+                            <p class="card-text">Mobile device security and compliance automation.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 portfolio-item">
+                    <div class="card h-100">
+                        <img src="https://images.unsplash.com/photo-1521791055366-0d553872125f?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=80" class="card-img-top" alt="Greek Council">
+                        <div class="card-body">
+                            <h5 class="card-title">Fraternity Portal</h5>
+                            <p class="card-text">Management system for Beta Lambda Chapter communications.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Activities Section -->
+    <section class="section" id="activities">
+        <div class="container">
+            <h2 class="text-center mb-5">Activities & Honors</h2>
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="card mb-3">
+                        <div class="card-body">
+                            <h5 class="card-title">Phi Beta Sigma Fraternity Incorporated</h5>
+                            <h6 class="card-subtitle mb-2 text-muted">Secretary for Beta Lambda Chapter | Apr 2023 — May 2025</h6>
+                            <ul>
+                                <li>Assisted with the preparation of reports, presentations, and other documents</li>
+                                <li>Managed and organized files and documents</li>
+                                <li>Coordinated and scheduled meetings and events</li>
+                                <li>Oversee social media platforms</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="card mb-3">
+                        <div class="card-body">
+                            <h5 class="card-title">Greek Council Member</h5>
+                            <h6 class="card-subtitle mb-2 text-muted">Brooklyn College | Apr 2023 — May 2025</h6>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">College Senate Member</h5>
+                            <h6 class="card-subtitle mb-2 text-muted">LaGuardia Community College | 2014 — 2016</h6>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="bg-light section" id="contact">
+        <div class="container">
+            <h2 class="text-center mb-5">Contact Me</h2>
+            <div class="row justify-content-center">
+                <div class="col-md-8">
+                    <div class="card">
+                        <div class="card-body">
+                            <form>
+                                <div class="mb-3">
+                                    <label for="name" class="form-label">Name</label>
+                                    <input type="text" class="form-control" id="name">
+                                </div>
+                                <div class="mb-3">
+                                    <label for="email" class="form-label">Email</label>
+                                    <input type="email" class="form-control" id="email">
+                                </div>
+                                <div class="mb-3">
+                                    <label for="message" class="form-label">Message</label>
+                                    <textarea class="form-control" id="message" rows="3"></textarea>
+                                </div>
+                                <button type="submit" class="btn btn-primary">Submit</button>
+                            </form>
+                            <hr>
+                            <div class="text-center">
+                                <p><i class="fas fa-phone me-2"></i> 718-223-7893</p>
+                                <p><i class="fas fa-envelope me-2"></i> proudmarkets@protonmail.com</p>
+                                <p><i class="fas fa-map-marker-alt me-2"></i> Brooklyn, NY</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <p>&copy; 2024 Jason Proud. All rights reserved.</p>
+                </div>
+                <div class="col-md-6 text-end">
+                    <a href="https://www.linkedin.com/in/jason-proud-59a634230/" class="text-white me-3"><i class="fab fa-linkedin"></i></a>
+                    <a href="https://github.com/MisterProud" class="text-white me-3"><i class="fab fa-github"></i></a>
+                    <a href="https://www.instagram.com/bc_sigmas/" class="text-white"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        // Smooth scrolling for navigation
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+</html>
